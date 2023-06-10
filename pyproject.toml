@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delta_t"
+version = "0.0.1"
+authors = [{ name = "Rubalo" }]
+description = "Testing a Naive timedelta implementation"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+    "autoflake",
+    "black",
+    "flake8",
+    "freezegun",
+    "isort",
+    "pytest",
+]
